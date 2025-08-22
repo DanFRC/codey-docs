@@ -8,21 +8,20 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
+      # 1️⃣ Checkout the repo
       - uses: actions/checkout@v3
 
+      # 2️⃣ Setup Python
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
 
-      - name: Install MkDocs
-        run: pip install mkdocs mkdocs-material
+      # 3️⃣ Install MkDocs + Material theme
+      - run: pip install mkdocs mkdocs-material
 
+      # 4️⃣ Deploy using built-in GITHUB_TOKEN
       - name: Deploy MkDocs
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --remote-name "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        run: mkdocs gh-deploy --force --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
