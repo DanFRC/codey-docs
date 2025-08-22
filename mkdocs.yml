@@ -20,5 +20,4 @@ nav:
       - Hello World: quickstart/hello.md
       - PID Example: quickstart/pid.md
   - Subsystems:
-      - DriveTrain: subsystems/drivetrain.md
-      - Shooter: subsystems/shooter.md
+      - Drivebases: subsystems/drivebases.md
