@@ -1,4 +1,7 @@
-site_name: Codey Docs
+site_name: Team XXXX Docs
 theme:
   name: material
-site_url: https://DanFRC.github.io/codey-docs/
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy  # <- enables the copy button
