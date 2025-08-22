@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write   # <- this is the fix
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,4 +25,6 @@ jobs:
           pip install mkdocs-material
 
       - name: Build and Deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # <- make sure this is set
         run: mkdocs gh-deploy --force
