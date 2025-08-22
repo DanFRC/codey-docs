@@ -3,6 +3,9 @@ site_url: https://DanFRC.github.io/codey-docs/
 
 theme:
   name: material
+  codehilite:
+    guess_lang: false
+    pygments_style: monokai
   palette:
     primary: 'blue'
     accent: 'orange'
