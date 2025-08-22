@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install mkdocs
-          pip install mkdocs-material
+          pip install mkdocs-material==9.0.0
 
       - name: Build and Deploy
         env:
