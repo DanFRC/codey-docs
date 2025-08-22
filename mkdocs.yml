@@ -1,4 +1,4 @@
-site_name: Boiiii You Came Here Cuz You Dumb as Hell
+site_name: Codey Docs
 site_url: https://DanFRC.github.io/codey-docs/
 
 theme:
@@ -15,7 +15,7 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
-    - content.code.copy   # enables copy button
+    - content.code.copy
     - search.highlight
     - search.suggest
 
@@ -31,7 +31,7 @@ markdown_extensions:
   - admonition
   - codehilite:
       guess_lang: false
-      linenums: true   # optional: adds line numbers
+      linenums: true
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
