@@ -1,3 +1,4 @@
-site_name: FRC Docs
+site_name: Codey Docs
 theme:
   name: material
+site_url: https://DanFRC.github.io/codey-docs/
