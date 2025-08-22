@@ -1,5 +1,6 @@
 site_name: Boiiii You Came Here Cuz You Dumb as Hell
 site_url: https://DanFRC.github.io/codey-docs/
+
 theme:
   name: material
   palette:
@@ -11,9 +12,10 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
-    - content.code.copy
+    - content.code.copy   # enables copy button
     - search.highlight
     - search.suggest
+
 nav:
   - Home: index.md
   - Quick Start:
@@ -21,3 +23,18 @@ nav:
       - PID Example: quickstart/pid.md
   - Subsystems:
       - Drivebases: subsystems/drivebases.md
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true   # optional: adds line numbers
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
