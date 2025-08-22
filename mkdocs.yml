@@ -1,7 +1,24 @@
-site_name: Team XXXX Docs
+site_name: Boiiii You Came Here Cuz You Dumb as Hell
+site_url: https://DanFRC.github.io/codey-docs/
 theme:
   name: material
+  palette:
+    primary: 'blue'
+    accent: 'orange'
+  font:
+    text: 'Roboto'
+    code: 'Fira Code'
   features:
     - navigation.instant
     - navigation.sections
-    - content.code.copy  # <- enables the copy button
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+nav:
+  - Home: index.md
+  - Quick Start:
+      - Hello World: quickstart/hello.md
+      - PID Example: quickstart/pid.md
+  - Subsystems:
+      - DriveTrain: subsystems/drivetrain.md
+      - Shooter: subsystems/shooter.md
